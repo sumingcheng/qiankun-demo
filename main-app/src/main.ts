@@ -2,12 +2,18 @@ import {createApp} from 'vue'
 import './style.css'
 import App from './App.vue'
 import {registerMicroApps, start} from 'qiankun'
+import router from '@/router/router'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
 
 // 子应用列表
 const apps: Array<any> = [
-  // 我们稍后会在这里添加子应用
+  {
+    name: 'react-app',
+    entry: '//localhost:5173',
+    container: '#react-container',
+    activeRule: '/react-app',
+  },
 ]
 
 // 注册子应用
