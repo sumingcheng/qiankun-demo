@@ -1,3 +1,3 @@
 <template>
-  <div id="react-container"></div>
+  <div id="reactContainer"></div>
 </template>

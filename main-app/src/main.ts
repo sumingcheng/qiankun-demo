@@ -9,10 +9,10 @@ createApp(App).use(router).mount('#app')
 // 子应用列表
 const apps: Array<any> = [
   {
-    name: 'react-app',
-    entry: '//localhost:5173',
-    container: '#react-container',
-    activeRule: '/react-app',
+    name: 'react-app', // 与子应用 package.json 中的 name 字段保持一致
+    entry: '//localhost:5174', // 子应用的地址
+    container: '#reactContainer', // 子应用挂载的元素
+    activeRule: '/react', // 子应用激活的路由前缀
   },
 ]
 

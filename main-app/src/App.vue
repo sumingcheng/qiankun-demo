@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/react">React App</router-link>
-    </nav>
+    <div>
+      <button>
+        <router-link to="/">Home</router-link>
+      </button>
+      <button>
+        <router-link to="/react">React App</router-link>
+      </button>
+    </div>
     <router-view></router-view>
   </div>
 </template>
+<script setup lang="ts">
+</script>
