@@ -1,5 +1,6 @@
 <template>
   <div>
-    <div id="subapp-container"></div>
+    <div id="jq">
+    </div>
   </div>
 </template>
